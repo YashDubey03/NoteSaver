@@ -1,10 +1,9 @@
-
+import React from "react";
 import { NavbarData } from "../data/Navbar";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
- <div className="w-full h-[45px] flex justify-center items-center p-4 bg-[#242424]-800 gap-x-5">
-
+    <div className="w-full h-[45px] flex justify-center items-center p-4 bg-[#242424]-800 gap-x-5">
       {NavbarData.map((link, idx) => (
         <NavLink
           key={idx}

@@ -1,9 +1,10 @@
+import React from "react";
 import { Calendar, Copy, Eye, PencilLine, Trash2 } from "lucide-react";
 import toast from "react-hot-toast";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react"; // Import useState
 import { removeFromPastes } from "../redux/pasteSlice";
-import { FormatDate } from "../utlis/formatDate";
+import { FormatDate } from "../utils/formatDate";
 
 const Paste = () => {
   const pastes = useSelector((state) => state.paste.pastes);
@@ -16,7 +17,7 @@ const Paste = () => {
 
   // Filter pastes based on search term (by title or content)
   const filteredPastes = pastes.filter((paste) =>
-    paste.title.toLowerCase().includes(searchTerm.toLowerCase())
+    paste.title.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   return (
