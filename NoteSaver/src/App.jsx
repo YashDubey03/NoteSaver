@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     path: "/pastes",
     element: (
       <div className="w-full h-full flex flex-col">
-        <Navbar />
+        <NavBar />
         <Paste />
       </div>
     ),
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     path: "/pastes/:id",
     element: (
       <div className="w-full h-full flex flex-col">
-        <Navbar />
+        <NavBar />
         <ViewPaste />
       </div>
     ),
